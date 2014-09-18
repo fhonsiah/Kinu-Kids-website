@@ -1,33 +1,62 @@
-<form>
 <link rel="stylesheet" type="text/css" href="style/bs/css/bootstrap.css"/>
-<link rel="stylesheet" type="text/css" href="dist/css/bootstrap-formhelpers.css"/>
-<link rel="stylesheet" type="text/css" href="dist/css/bootstrap-formhelpers.min.css"/>
-	<div class="row">
-		<ul class="nav nav-tabs" role="tablist">
-			<li class="active"><a href="#"></a>Parents</li>
-			<li><a href="#">Register</a>
+<!-- <link rel="stylesheet" type="text/css" href="BootstrapFormHelpers-master/dist/css/bootstrap-formhelpers.css"/>
+<link rel="stylesheet" type="text/css" href="BootstrapFormHelpers-master/dist/css/bootstrap-formhelpers.min.css"> -->
+	<style type="text/css">
+	.centered{
+		float: right;
+	}
+	</style>
+<div class="container">
+	<ul class="nav nav-tabs nav-justified">
+			<li class="active"><a href="#section-1" data-toggle="tab">Parents</a></li>
+			<li><a href="#section-2" data-toggle="tab">Register</a></li>
+	</ul>
 
-			<div class="input-group input-group-lg">
-							<span class="input-group-addon input-group-addon-lg">
-					<span class="glyphicon glyphicon-user"></span>
-				</span>	
-				<label>Upload Photo</label>				
-			</div>
 
+	<div class="tab-content">
+		<div class="tab-pane fade in active" id="section-1">
+			<p>Parents List </p>
+		</div>
+
+		<div class="tab-pane fade" id="section-2" >
+		<form role="form" >
 			<div class="form-group">
+
+				<div class="row">
+  				<div class="col-xs-6 col-md-3">
+   				 <a href="#" class="thumbnail">
+      			<img src="images/avocode.png" alt="..." class="img-rounded">
+    			</a>
+  				</div>
+  				</div>
+  				<!-- end row for DP -->
+
+			<form role="form" class="form-inline" >
+				<div class="row">
+				<div class="col-lg-4">
 				<label for="input-fname">FirstName</label>
-				<input type="text" class="form-control" id="fname" placeholder="first name">
+					<input type="text" class="form-control" id="fname" placeholder="first name">
+				</div>
 			</div>
 
-			<div class="form-group">
+			<div class="row">
+				<div class="col-lg-4">
 				<label for="input-lname">LastName</label>
-				<input type="text" class="form-control" id="lname" placeholder="last name">
+					<input type="text" class="form-control" id="lname" placeholder="last name">
+				</div>
+				
 			</div>
 
-			<div class="form-group">
-				<label for="inputEmail">Email</label>
+
+			<div class="row">
+				<div class="col-lg-4">
+					<label for="inputEmail" >Email</label>
 				<input type="text" class="form-control" id="fname" placeholder="johnDoe@email.com">
+				</div>
+				
 			</div>
+			</form>
+
 
 			<div class="row">
 		
@@ -57,34 +86,39 @@
             </div>
         </div>
 
-            <div class="input-group">
-				<label for="inputkname">Kidname</label>
+            <div class="row ">
+            	<div class="col-lg-4">
+            	<div class="input-group">
+            	<!-- <label for="inputkname">Kidname</label> -->
 				<input type="text" class="form-control" id="kname" placeholder="Your kidname">
 				<span class="input-group-addon "><span class="glyphicon glyphicon-user"></span></span>
+            	</div>
+            		
+            	</div>
+				
 				
 			</div>
 
-			<div class="btn-group">
-				<button class="btn btn-danger" type="button">Cancel</button>
-				<button class="btn bnt-success" type="button">Submit</button>
+			<div class="centered row form-group btn-group btn-justified">
+
+				<button class="btn btn-danger btn-lg" type="button">Cancel</button>
+				<button class="btn btn-success btn-lg" type="button">Submit</button>
 			</div>
 
-			</li> 
-			<!-- end registration -->
-
-			
 			</div>
+			<!-- end form-group -->
 
-		</ul>	
+		</form>
+
 	</div>
+	<!-- end section-2 -->
+
+		</div>
+		<!-- end tab-content -->
+	</div>
+	<!-- end container -->
 	<script type="text/javascript" src="behaviour/contacts.js"></script>
-	<script type="text/javascript" src="dist/js/bootstrap-formhelpers.js"></script>
-	<script type="text/javascript" src="dist/js/bootstrap-formhelpers.min.js"></script>
+	<script type="text/javascript" src="behaviour/jQuery/jquery.js"></script> 
+<!-- 	// <script type="text/javascript" src="BootstrapFormHelpers-master/dist/js/bootstrap-formhelpers.js"></script>
+	// <script type="text/javascript" src="BootstrapFormHelpers-master/dist/js/bootstrap-formhelpers.min.js"></script> -->
 	<script type="text/javascript" src="style/bs/js/bootstrap.js"></script> 
-
-
-</form>
-
-
-
-
