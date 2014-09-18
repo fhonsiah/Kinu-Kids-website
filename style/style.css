@@ -1,0 +1,116 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+        overflow: hidden;
+        background-color: #ccff99;
+}
+
+.container{
+  width: 100%;
+  margin: auto 0;
+}
+
+#bblDiv{
+        width: 80px;
+        height: 80px;
+        /*background: #5BBCFC;*/
+        background: #3366ff;
+
+        border: 2px solid #5BBCFC;
+        border-radius: 40px;
+        position: absolute;
+        top: 180px;
+        display: none;
+        left: 49%;
+        opacity: 0.5;
+}
+#bblDiv p{
+        text-align: center;
+        margin-top: 29px;
+        font-size: 25px;
+
+}
+#bblDiv:hover{
+
+        opacity: 0.9;
+}
+@keyframes burst{
+        from{
+                width:80px;
+                height:80px;
+                opacity: 1;
+        }
+        to{
+                width:150px;
+                height:150px;
+                border-radius: 75px;
+                opacity:0;
+        }
+}
+/*@-webkit-keyframes{
+      from{
+                width:80px;
+                height:80px;
+                opacity: 1;
+        }
+        to{
+                width:85px;
+                height:85px;
+                opacity:0;
+        }  
+}*/
+
+#sDiv{
+ float: right;
+ top:-100px;
+ position: relative;
+  width: 200px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  background-color: #fff;
+  border: 8px solid black;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  -webkit-box-shadow: 2px 2px 4px #888;
+  -moz-box-shadow: 2px 2px 4px #888;
+  box-shadow: 2px 2px 4px #888;
+}
+.Qs{
+        float:top;
+        border: 2px solid black;
+        width:100%;
+        height: 20%;
+        background:url(photo.php.jpg);
+}
+
+#qsSection{
+  width: 100%;
+}
+
+
+#mainDiv{     
+        float: center;
+        /*border:2px solid black;*/
+        width:100%;
+        height:5%;
+        background-color: white;
+}
+#footer{
+        /*position:bottom;*/
+        background:#eee;
+        height: 15%;
+        width : 100%;
+        /*text-align: center;*/
+        position: absolute; 
+        bottom: 0; 
+        /*margin-left: -4%;*/
+}
+
+#qs section div nav li.qList {
+   left: -150px;
+}

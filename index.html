@@ -1,0 +1,93 @@
+<html>
+   <head>
+        <title>the game</title>
+        <link rel="stylesheet" type="text/css" href="style/style.css"/>
+        <link rel="stylesheet" type="text/css" href="style/bs/css/bootstrap.css"/>
+        <link rel="stylesheet" type="text/css" href="style/tabs.css" />
+        <link rel="stylesheet" type="text/css" href="style/tabstyles.css" />
+   </head>
+   <body>
+ 
+         <!--<p class="speech">SitePoint Rocks!</p>-->
+         <div class="container" id="mainDiv">
+			<!-- the top layer -->
+
+      <div class="row" id="qs">
+         	<section id="qsSection">
+				<div style="border: none" class="tabs tabs-style-circlefill">
+					<nav style="border: none; width:100%;">
+						<ul>
+							<li class="qnList"><a id = "qnDiv" href="#section-circlefill-1" class="icon icon-plug"><span style="z-index: 1000"> </span></a></li>
+							<li class="ansDiv"><a id="ansDiv" href="#section-circlefill-5" class="icon icon-plane"><span></span></a></li>
+						</ul>
+					</nav>
+					<div style="border: none" class="content-wrap">
+						<section id="section-circlefill-1"></section>
+						<section id="section-circlefill-5"></section>
+					</div><!-- /content -->
+				</div><!-- /tabs -->
+			</section>
+
+      </div>
+      
+     	<!--the main body-->
+         <div id ="row" id="mainGame">
+         	
+         </div>
+
+         <!--the bottom line-->
+
+         <div class="row col-md-10" id="footer">
+            <!--<div id = "aboutUs"><a href ="http://www.kinu.co.tz/"><em>About us</em></a></div> 
+            <div id = "events"><em>Events</em></div>
+            <div id = "logo"><em>Logo</em></div>
+            <div id = "parents"><em>Parents</em></div>
+            <div id = "arrow"><em>Arrow</em></div>-->
+           <!-- <ul class="nav nav-tabs">
+                <li><a href="#">about us</a>
+                <li><a href="#">Events</a>
+                <li><a href="#">logo</a>
+                <li><a href="#">parents</a>
+                <li><a href="#">arrows</a>
+            </ul>
+          
+         </div>-->
+
+
+           <section>
+					<div class="tabs tabs-style-iconfall">
+						<nav>
+							<ul>
+								<li><a href="#section-iconfall-1" class="icon icon-home"><span>Kinu kids</span></a></li>
+								<li><a href="#section-iconfall-2" class="icon icon-gift"><span>Parents</span></a></li>
+								<li><a href="#section-iconfall-3" class="icon icon-upload"><span>Up</span></a></li>
+								<li><a href="#section-iconfall-4" class="icon icon-coffee"><span>Events</span></a></li>
+								<li><a href="#section-iconfall-5" class="icon icon-config"><span>About us</span></a></li>
+								</ul>
+						</nav>
+						<div class="content-wrap">
+							<section id="section-iconfall-1"><p>1</p></section>
+							<section id="section-iconfall-2"><p>2</p></section>
+							<section id="section-iconfall-3"><p>3</p></section>
+							<section id="section-iconfall-4"><p>4</p></section>
+							<section id="section-iconfall-5"><p>5</p></section>
+						</div><!-- /content -->
+					</div><!-- /tabs -->
+				</section>
+			</div>
+		</div>
+ 	<script type="text/javascript" src="behaviour/bblgame.js"></script>
+ 	<script type="text/javascript" src="behaviour/jQuery/jquery.js"></script> 
+ 	<script type="text/javascript" src="style/bs/js/bootstrap.js"></script> 
+ 	<script src="behaviour/cbpFWTabs.js"></script>
+		<script>
+			(function() {
+
+				[].slice.call( document.querySelectorAll( '.tabs' ) ).forEach( function( el ) {
+					new CBPFWTabs( el );
+				});
+
+			})();
+		</script> 
+   </body>
+</html>
