@@ -1,5 +1,5 @@
 <form>
-<!-- <link rel="stylesheet" type="text/css" href="style/bs/css/bootstrap.css"/> -->
+<link rel="stylesheet" type="text/css" href="style/bs/css/bootstrap.css"/>
 <link rel="stylesheet" type="text/css" href="dist/css/bootstrap-formhelpers.css"/>
 <link rel="stylesheet" type="text/css" href="dist/css/bootstrap-formhelpers.min.css"/>
 	<div class="row">
@@ -29,11 +29,33 @@
 				<input type="text" class="form-control" id="fname" placeholder="johnDoe@email.com">
 			</div>
 
-			<div class="input-group">
-				<label for="phone">Phone</label>
-				<select id="countries_phone1" class="form-control bfh-countries" data-country="US"></select>
-				<input type="text" class="form-control bfh-phone" data-country="countries_phone1" placeholder="Phonenumber">
-            </div> 
+			<div class="row">
+		
+	    <div class="col-md-4">
+            <div class="contacts">
+                <label>Contacts:</label>
+                    <div class="form-group multiple-form-group input-group">
+                        <div class="input-group-btn input-group-select">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                <span class="concept">Phone</span> <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#phone">Phone</a></li>
+                                <li><a href="#fax">Fax</a></li>
+                                <li><a href="#skype">Skype</a></li>
+                                <li><a href="#email">E-mail</a></li>
+                                <li><a href="#www">Web</a></li>
+                            </ul>
+                            <input type="hidden" class="input-group-select-val" name="contacts['type'][]" value="phone">
+                        </div>
+                        <input type="text" name="contacts['value'][]" class="form-control">
+                        <span class="input-group-btn">
+                            <button type="button" class="btn btn-success btn-add">+</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
 
             <div class="input-group">
 				<label for="inputkname">Kidname</label>
@@ -55,7 +77,14 @@
 
 		</ul>	
 	</div>
+	<script type="text/javascript" src="behaviour/contacts.js"></script>
 	<script type="text/javascript" src="dist/js/bootstrap-formhelpers.js"></script>
 	<script type="text/javascript" src="dist/js/bootstrap-formhelpers.min.js"></script>
 	<script type="text/javascript" src="style/bs/js/bootstrap.js"></script> 
+
+
 </form>
+
+
+
+
