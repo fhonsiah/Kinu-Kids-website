@@ -1,6 +1,21 @@
-<link rel="stylesheet" type="text/css" href="style/bs/css/bootstrap.css"/>
-<!-- <link rel="stylesheet" type="text/css" href="BootstrapFormHelpers-master/dist/css/bootstrap-formhelpers.css"/>
-<link rel="stylesheet" type="text/css" href="BootstrapFormHelpers-master/dist/css/bootstrap-formhelpers.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="style/bs/css/bootstrap.css"/>
+
+	<!-- CSS BootstrapValidator -->
+	<link rel="stylesheet" type="text/css" href="style/bs/bootstrapValidator.css">
+
+	<!-- jquery plugins and bootstrap.js -->
+	<script type="text/javascript" src="behaviour/jQuery/jquery.js"></script>
+	<script type="text/javascript" src="style/bs/js/bootstrap.js"></script>
+
+	<!-- bootstrapValidator.js -->
+	<script type="text/javascript" src="behaviour/bootstrapValidator.js"></script>
+	<!-- calling plugin -->
+	<script type="text/javascript" src="behaviour/validate.js"></script>
+	<!-- contacts.js -->
+	<script type="text/javascript" src="behaviour/contacts.js"></script>
+
+
+
 	<style type="text/css">
 	.centered{
 		float: right;
@@ -16,42 +31,77 @@
 	<div class="tab-content">
 		<div class="tab-pane fade in active" id="section-1">
 			<p>Parents List </p>
+
+			<div class="form-group col-lg-6">
+				<div class="row">
+				<span class="thumbnail">
+					<img src="images/avocode.png" alt="..." class="img-rounded">
+					<div class="col-lg-6">
+					<p>i will fetch parent list data from DB and display them in here</p>
+				</div>
+				</span>
+				<div class="thumbnail">
+					<img src="images/avocode.png" alt="..." class="img-rounded">
+					<div class="col-lg-6">
+					<p>i will fetch parent list data from DB and display them in here</p>
+				</div>
+				</div>
+				
+			</div>
+
+			</div>
+
 		</div>
+		<!-- end of section-1 -->
 
 		<div class="tab-pane fade" id="section-2" >
-		<form role="form" >
+		<form data-toggle="validator" role="form" id="registrationForm" method="post" action="...">
 			<div class="form-group">
 
+			<div class="col-lg-6">
+				
 				<div class="row">
-  				<div class="col-xs-6 col-md-3">
+  				<div class="col-lg-6">
    				 <a href="#" class="thumbnail">
       			<img src="images/avocode.png" alt="..." class="img-rounded">
     			</a>
   				</div>
   				</div>
-  				<!-- end row for DP -->
 
-			<form role="form" class="form-inline" >
+  				<div class="row">
+  					<div class="col-lg-6 ">
+  						<a href="#" class="thumbnail">
+  							<img src="images/avocode.png" alt="..." class="img-rounded">
+  						</a>
+  					</div>
+  				</div>
+  				<!-- end row for DP -->
+			</div>
+			<!-- end of Display pictures Division -->
+
+				
+			<div class="form-group col-lg-6">
+				<form role="form" class="form-inline" >
 				<div class="row">
-				<div class="col-lg-4">
-				<label for="input-fname">FirstName</label>
-					<input type="text" class="form-control" id="fname" placeholder="first name">
+				<div class="col-lg-12">
+				<label for="inputName" class="contol-label">FirstName</label>
+					<input type="text" class="form-control" id="inputName" name="username" placeholder="first name" required>
 				</div>
 			</div>
 
 			<div class="row">
-				<div class="col-lg-4">
-				<label for="input-lname">LastName</label>
-					<input type="text" class="form-control" id="lname" placeholder="last name">
+				<div class="col-lg-12">
+				<label for="inputName">LastName</label>
+					<input type="text" class="form-control" id="inputName" name="username" placeholder="last name">
 				</div>
 				
 			</div>
 
 
 			<div class="row">
-				<div class="col-lg-4">
+				<div class="col-lg-12">
 					<label for="inputEmail" >Email</label>
-				<input type="text" class="form-control" id="fname" placeholder="johnDoe@email.com">
+				<input type="email" class="form-control" id="inputEmail" name="email" data-error="Sorry, that email address is invalid"  placeholder="johnDoe@email.com" required>
 				</div>
 				
 			</div>
@@ -60,7 +110,7 @@
 
 			<div class="row">
 		
-	    <div class="col-md-4">
+	    <div class="col-lg-12">
             <div class="contacts">
                 <label>Contacts:</label>
                     <div class="form-group multiple-form-group input-group">
@@ -74,6 +124,8 @@
                                 <li><a href="#skype">Skype</a></li>
                                 <li><a href="#email">E-mail</a></li>
                                 <li><a href="#www">Web</a></li>
+                                <li><a href="twitter">Twitter</a></li>
+                                <li><a href="Facebook">Facebook</a></li>
                             </ul>
                             <input type="hidden" class="input-group-select-val" name="contacts['type'][]" value="phone">
                         </div>
@@ -87,7 +139,7 @@
         </div>
 
             <div class="row ">
-            	<div class="col-lg-4">
+            	<div class="col-lg-12">
             	<div class="input-group">
             	<!-- <label for="inputkname">Kidname</label> -->
 				<input type="text" class="form-control" id="kname" placeholder="Your kidname">
@@ -98,11 +150,14 @@
 				
 				
 			</div>
+			</div>
+			<!-- end of details div -->
+			
 
 			<div class="centered row form-group btn-group btn-justified">
 
 				<button class="btn btn-danger btn-lg" type="button">Cancel</button>
-				<button class="btn btn-success btn-lg" type="button">Submit</button>
+				<button class="btn btn-success btn-lg" type="submit">Submit</button>
 			</div>
 
 			</div>
@@ -116,9 +171,84 @@
 		</div>
 		<!-- end tab-content -->
 	</div>
-	<!-- end container -->
-	<script type="text/javascript" src="behaviour/contacts.js"></script>
-	<script type="text/javascript" src="behaviour/jQuery/jquery.js"></script> 
-<!-- 	// <script type="text/javascript" src="BootstrapFormHelpers-master/dist/js/bootstrap-formhelpers.js"></script>
-	// <script type="text/javascript" src="BootstrapFormHelpers-master/dist/js/bootstrap-formhelpers.min.js"></script> -->
-	<script type="text/javascript" src="style/bs/js/bootstrap.js"></script> 
+	<!-- end container -->	
+
+
+<script>
+$(document).ready(function() {
+    $('#registrationForm').bootstrapValidator({
+        // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
+        feedbackIcons: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+            username: {
+                message: 'The username is not valid',
+                validators: {
+                    notEmpty: {
+                        message: 'The username is required and cannot be empty'
+                    },
+                    stringLength: {
+                        min: 6,
+                        max: 30,
+                        message: 'The username must be more than 6 and less than 30 characters long'
+                    },
+                    regexp: {
+                        regexp: /^[a-zA-Z0-9]+$/,
+                        message: 'The username can only consist of alphabetical and number'
+                    },
+                    different: {
+                        field: 'password',
+                        message: 'The username and password cannot be the same as each other'
+                    }
+                }
+            },
+            email: {
+                validators: {
+                    notEmpty: {
+                        message: 'The email address is required and cannot be empty'
+                    },
+                    emailAddress: {
+                        message: 'The email address is not a valid'
+                    }
+                }
+            },
+            // password: {
+            //     validators: {
+            //         notEmpty: {
+            //             message: 'The password is required and cannot be empty'
+            //         },
+            //         different: {
+            //             field: 'username',
+            //             message: 'The password cannot be the same as username'
+            //         },
+            //         stringLength: {
+            //             min: 8,
+            //             message: 'The password must have at least 8 characters'
+            //         }
+            //     }
+            // },
+            // birthday: {
+            //     validators: {
+            //         notEmpty: {
+            //             message: 'The date of birth is required'
+            //         },
+            //         date: {
+            //             format: 'YYYY/MM/DD',
+            //             message: 'The date of birth is not valid'
+            //         }
+            //     }
+            // },
+            // gender: {
+            //     validators: {
+            //         notEmpty: {
+            //             message: 'The gender is required'
+            //         }
+                }
+            }
+        }
+    });
+});
+</script>
