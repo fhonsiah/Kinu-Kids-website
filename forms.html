@@ -20,6 +20,44 @@
 	.centered{
 		float: right;
 	}
+
+	.profile 
+		{
+    height: 155px;
+    display: inline-block;
+    margin-top: 5px;
+    padding-top: 5px;
+
+    }
+
+    figure{
+    	left: 0px;
+    }
+
+    .content{
+    	margin-top: 0px;
+    	padding-top: 0px;
+    }
+
+    .dropdown-menu 
+{
+    background-color: #34495e;    
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    width: 250px;
+    margin-left: -125px;
+    left: 50%;
+    margin-bottom:10px;
+    }
+.dropdown-menu .divider 
+{
+    background:none;    
+    }
+.dropdown-menu>li>a
+{
+    color:#f5f5f5;
+    }
+
 	</style>
 <div class="container">
 	<ul class="nav nav-tabs nav-justified">
@@ -30,26 +68,52 @@
 
 	<div class="tab-content">
 		<div class="tab-pane fade in active" id="section-1">
-			<p>Parents List </p>
+			
 
-			<div class="form-group col-lg-6">
-				<div class="row">
-				<span class="thumbnail">
-					<img src="images/avocode.png" alt="..." class="img-rounded">
-					<div class="col-lg-6">
-					<p>i will fetch parent list data from DB and display them in here</p>
-				</div>
-				</span>
-				<div class="thumbnail">
-					<img src="images/avocode.png" alt="..." class="img-rounded">
-					<div class="col-lg-6">
-					<p>i will fetch parent list data from DB and display them in here</p>
-				</div>
-				</div>
+
+		<div class="container">
+			<div class="row">
+					<div class="col-md-2 col-md-8 col-3 col-lg-6">
+    	 				<div class="well profile pull-left">
+           					 <div class="col-sm-12">
+
+           					     <div class="col-xs-12 col-sm-4 text-center">
+                 				   <figure>
+                      				  <img src="images/user146.png" alt="" class="img-circle img-responsive">
+                        			 </figure>
+                        			<div class="btn-group dropdown btn-block">
+                        			    <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-cog"></span> Options </button>
+                      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                      </button>
+                      <ul class="dropdown-menu text-left" role="menu">
+                        <li><a href="#"><span class="glyphicon glyphicon-envelope pull-right"></span> Send an email </a></li>
+                        <li class="divider"></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-list pull-right"></span>Add or remove from a list</a></li> 
+                      </ul>
+
+                        			</div>
+               					 </div>
+             			
+             		 		   <div class="col-xs-12 col-sm-8 content">
+
+             		 		     <h3>Emmanuel Mgombere</h3>
+                 			 	  <p><strong>About: </strong> Web Designer / UI. </p>
+                  				  <p><strong>Hobbies: </strong> Read, out with friends, listen to music, draw and learn new things. </p>
+                    			
+             		 		   </div>
+
+             		 		</div>
+             		 	</div>
+             		</div>
 				
 			</div>
+		</div>
 
-			</div>
+
+
+
 
 		</div>
 		<!-- end of section-1 -->
@@ -61,19 +125,30 @@
 			<div class="col-lg-6">
 				
 				<div class="row">
+				
   				<div class="col-lg-6">
    				 <a href="#" class="thumbnail">
-      			<img src="images/avocode.png" alt="..." class="img-rounded">
+      			<img src="images/user146.png" alt="..." class="img-rounded">
     			</a>
   				</div>
+  				<div class="col-lg-6 col-md-3">
+  						<h2><small>Please update your photo</small></h2>
+  					</div><br>
+  				  <button class="btn btn-info "><span class="glyphicon glyphicon-user"></span> Choose DP</button>
   				</div>
 
   				<div class="row">
-  					<div class="col-lg-6 ">
+  				
+  					<div class="col-lg-6 col-md-3 ">
   						<a href="#" class="thumbnail">
-  							<img src="images/avocode.png" alt="..." class="img-rounded">
+  							<img src="images/user146.png" alt="..." class="img-rounded">
   						</a>
   					</div>
+  						<div class="col-lg-6">
+  						<h2><small>Please update your kid photo</small></h2>
+  					</div><br>
+  					
+  					  <button class="btn btn-info "><span class="glyphicon glyphicon-user"></span> Choose DP </button>
   				</div>
   				<!-- end row for DP -->
 			</div>
@@ -82,33 +157,42 @@
 				
 			<div class="form-group col-lg-6">
 				<form role="form" class="form-inline" >
-				<div class="row">
+				<div class="row form-group">
 				<div class="col-lg-12">
-				<label for="inputName" class="contol-label">FirstName</label>
-					<input type="text" class="form-control" id="inputName" name="username" placeholder="first name" required>
+				<label for="inputName" class="contol-label">Parent Name</label>
+					<input type="text" class="form-control" id="inputName" name="username" placeholder="firstname + lastname" required>
 				</div>
 			</div>
 
-			<div class="row">
-				<div class="col-lg-12">
-				<label for="inputName">LastName</label>
-					<input type="text" class="form-control" id="inputName" name="username" placeholder="last name">
-				</div>
-				
-			</div>
-
-
-			<div class="row">
+			<div class="row form-group">
 				<div class="col-lg-12">
 					<label for="inputEmail" >Email</label>
 				<input type="email" class="form-control" id="inputEmail" name="email" data-error="Sorry, that email address is invalid"  placeholder="johnDoe@email.com" required>
 				</div>
 				
 			</div>
+
+			<div class="row form-group">
+				<div class="col-lg-12">
+				<label for="">Hobbie</label>
+					<input type="text" class="form-control" id="" placeholder="What is your Hobbie?">
+					
+				</div>
+			</div>
+
+
+			<div class="row form-group">
+				<div class="col-lg-12">
+				<label for="" >Occupations</label>
+					<input type="text" class="form-control" id="" placeholder="Field of expert">
+					
+				</div>
+			</div>
+
 			</form>
 
 
-			<div class="row">
+			<div class="row form-group">
 		
 	    <div class="col-lg-12">
             <div class="contacts">
@@ -138,7 +222,7 @@
             </div>
         </div>
 
-            <div class="row ">
+            <div class="row form-group">
             	<div class="col-lg-12">
             	<div class="input-group">
             	<!-- <label for="inputkname">Kidname</label> -->
@@ -150,6 +234,8 @@
 				
 				
 			</div>
+
+			
 			</div>
 			<!-- end of details div -->
 			
