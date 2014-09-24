@@ -173,3 +173,7 @@
 [Tue Sep 23 22:44:59 2014] [error] [client 127.0.0.1] File does not exist: /var/www/kids.kinu.co.tz/assets, referer: http://kids.kinu.co.tz/parents.php
 [Tue Sep 23 22:44:59 2014] [error] [client 127.0.0.1] File does not exist: /var/www/kids.kinu.co.tz/assets, referer: http://kids.kinu.co.tz/parents.php
 [Tue Sep 23 22:44:59 2014] [error] [client 127.0.0.1] File does not exist: /var/www/kids.kinu.co.tz/bower_components/jquery/distjquery.min.js, referer: http://kids.kinu.co.tz/parents.php
+[Wed Sep 24 10:24:09 2014] [error] [client 127.0.0.1] File does not exist: /var/www/kids.kinu.co.tz/main.css, referer: http://kids.kinu.co.tz/parents.php
+[Wed Sep 24 10:24:09 2014] [error] [client 127.0.0.1] File does not exist: /var/www/kids.kinu.co.tz/assets/js, referer: http://kids.kinu.co.tz/parents.php
+[Wed Sep 24 10:24:09 2014] [error] [client 127.0.0.1] File does not exist: /var/www/kids.kinu.co.tz/assets/js, referer: http://kids.kinu.co.tz/parents.php
+[Wed Sep 24 10:24:09 2014] [error] [client 127.0.0.1] File does not exist: /var/www/kids.kinu.co.tz/bower_components/jquery/distjquery.min.js, referer: http://kids.kinu.co.tz/parents.php
