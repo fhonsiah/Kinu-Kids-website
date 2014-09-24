@@ -1,0 +1,25 @@
+{
+  "name": "kids.kinu.co.tz",
+  "version": "0.0.0",
+  "homepage": "https://github.com/mtuchi/Kinu-Kids-website",
+  "description": "A website for kids",
+  "keywords": [
+    "website",
+    "kids",
+    "kinu"
+  ],
+  "authors": [
+    "2014 kinu-interns"
+  ],
+  "license": "Apache 2.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.2.0"
+  }
+}
