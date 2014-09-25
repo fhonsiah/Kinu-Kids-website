@@ -1,3 +1,18 @@
+<?php 
+   /* ================================================================
+	* KINU KIDS WEBSITE
+	* includes/config.php
+	* ---------------------------------------------------------------
+	* By 2014 KINU INTERNS
+	* Apache 2.0 License
+	* ================================================================ */
+
+
+	include("includes/functions.php");
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,10 +24,6 @@
     <link rel="icon" href="../../favicon.ico">
 
     <title>parents-test &middot; kinukids</title>
-
-    
-
-    
 
     <!-- Bootstrap core CSS -->
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -74,38 +85,34 @@
     </div>
 
     <div class="container">
+		
+		<p class="lead">List of all parents</p>
+		<hr/>
+		
 		<table class="table table-responsive table-hover">
 			<tr>
-				<th>First name</th>
-				<th>Last name</th>
+				<th><input type="checkbox"></th>
+				<th>Full name</th>
+				<th>Gender</th>
 				<th>Mobile number</th>
 				<th>Email address</th>
+				<th>Member since</th>
 			</tr>
 			<tr>
-				<td>Debbie</td>
-				<td>Mathers</td>
-				<td>+255 (0) 653 232 460</td>
-				<td>debbiemathers@example.com</td>
+				<td><input type="checkbox"></td>
+				<td>Walter Bishop</td>
+				<td>Male</td>
+				<td>+255 (0) 653 123 456</td>
+				<td>walterbishop@example.com</td>
+				<td>2014-05-11 12:26:44</td>
 			</tr>
-			<tr>
-				<td>Jane</td>
-				<td>Doe</td>
-				<td>+255 (0) 653 232 460</td>
-				<td>johndoe@example.com</td>
-			</tr>
-			<tr>
-				<td>Peter</td>
-				<td>Bishop</td>
-				<td>+255 (0) 653 232 460</td>
-				<td>bishoppeter@example.com</td>
-			</tr>
-			</tr>
-			<tr>
-				<td>Walter </td>
-				<td>Bishop</td>
-				<td>+255 (0) 653 232 460</td>
-				<td>wallbishop@example.com</td>
-			</tr>
+			
+			<?php 
+				
+				echo parent_list();
+				
+			?>
+			
 		</table>
     </div><!-- /.container -->
 

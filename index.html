@@ -1,85 +1,251 @@
 <html>
-   <head>
-        <title>KinuKids</title>
-        <link rel="stylesheet" type="text/css" href="style/style.css"/>
-        <link rel="stylesheet" type="text/css" href="style/bs/css/bootstrap.css"/>
-        <link rel="stylesheet" type="text/css" href="style/tabs.css" />
-        <link rel="stylesheet" type="text/css" href="style/tabstyles.css" />
-   </head>
-   <body>
- 
-         <!--<p class="speech">SitePoint Rocks!</p>-->
-         <div class="container" id="mainDiv">
-			<!-- the top layer -->
 
-      <div class="row" id="qs">
-         	<section id="qsSection">
+<head>
+	<title>bubble game
+	</title>
+	<link rel="stylesheet" type="text/css" href="style/style.css"/>
+	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="style/tabs.css" />
+	<link rel="stylesheet" type="text/css" href="style/tabstyles.css" />
+</head>
+
+	<body>
+
+		<div class="container" id="mainDiv">
+			<!-- the top layer -->
+			<div class="row" id="qs">
+				<!-- <div id="qnDiv" class="qn-div col-md-3"></div>
+				<div class="score col-md-3 pull-right" id="score"></div> -->
+				<section>
 				<div style="border: none" class="tabs tabs-style-circlefill">
-					<nav style="border: none; width:100%;">
+					<nav style="border: none">
 						<ul>
-							<li class="qnList"><a id = "qnDiv" href="#section-circlefill-1" class="icon icon-plug"><span style="z-index: 1000"> </span></a></li>
-							<li class="ansDiv"><a id="ansDiv" href="#section-circlefill-5" class="icon icon-plane"><span></span></a></li>
+							<li id="qnDiv"><a href="#section-circlefill-1" class="icon icon-plug"><span style="z-index: 1000"> </span></a></li>
+							<!-- <li><a href="#section-circlefill-2" class="icon icon-gift"><span>Gifts</span></a></li>
+							<li><a href="#section-circlefill-3" class="icon icon-box"><span>Boxes</span></a></li>
+							<li><a href="#section-circlefill-4" class="icon icon-date"><span>Prints</span></a></li> -->
+							<li><a href="#section-circlefill-5" class="icon icon-plane"><span></span></a></li>
 						</ul>
 					</nav>
 					<div style="border: none" class="content-wrap">
 						<section id="section-circlefill-1"></section>
+						<section id="section-circlefill-2"></section>
+						<section id="section-circlefill-3"></section>
+						<section id="section-circlefill-4"></section>
 						<section id="section-circlefill-5"></section>
 					</div><!-- /content -->
 				</div><!-- /tabs -->
 			</section>
+			</div>
+			<!--the main  body-->
+			<div class="row" id="gameCon">
 
-      </div>
-      
-     	<!--the main body-->
-         <div id ="row" id="mainGame">
-         	
-         </div>
+				<!-- game part -->
+				<section class="hero" id="hero">
+		            <div class="container">
+		              <div class="row">
+		                <div class="col-md-12 text-right navicon">
+		                  <a id="nav-toggle" class="nav_slide_button" href="#"><span></span></a>
+		                </div>
+		              </div>
+		              <div class="row">
+		                <div class="col-md-8 col-md-offset-2 text-center inner">
+		                  <h1 class="animated fadeInDown">Bubble <span>game</span></h1>
+		                  <p class="animated fadeInUp delay-05s">Start playing</p>
+		                </div>
+		              </div>
+		              <div class="row">
+		                <div class="col-md-6 col-md-offset-3 text-center">
+		                  <!-- <a href="http://tympanus.net/codrops/?p=19439" class="learn-more-btn">Back to the article</a> -->
+		                </div>
+		              </div>
+		            </div>
+		        </section>
 
-         <!--the bottom line-->
+		        <div class="kinu-events">
+		        	<section class="swag text-center">
+				          <div class="container">
+				            <div class="row">
+				              <div class="col-md-8 col-md-offset-2">
+				                <h1>Events<span> <em>Achedule</em></span></h1>
+				                <a href="#portfolio" class="down-arrow-btn"><i class="fa fa-chevron-down"></i></a>
+				              </div>
+				            </div>
+				          </div>
+				        </section>
 
-         <div class="row col-md-10" id="footer">
-            <!--<div id = "aboutUs"><a href ="http://www.kinu.co.tz/"><em>About us</em></a></div> 
-            <div id = "events"><em>Events</em></div>
-            <div id = "logo"><em>Logo</em></div>
-            <div id = "parents"><em>Parents</em></div>
-            <div id = "arrow"><em>Arrow</em></div>-->
-           <!-- <ul class="nav nav-tabs">
-                <li><a href="#">about us</a>
-                <li><a href="#">Events</a>
-                <li><a href="#">logo</a>
-                <li><a href="#">parents</a>
-                <li><a href="#">arrows</a>
-            </ul>
-          
-         </div>-->
+				        <section class="portfolio text-center section-padding" id="portfolio">
+				          <div class="container">
+				            <div class="row">
+				              <div id="portfolioSlider">
+				        
 
+				                <!-- events -->
+				                <div class="container-event">
+				                    <div class="main">
+				                      <ul class="cbp_tmtimeline">
+				                        <li>
+				                          <time class="cbp_tmtime" datetime="2013-04-10 18:30"><span style="font-size: 23px;">4/10/13</span> <span style="font-size: 28px;">18:30</span></time>
+				                          <div class="cbp_tmicon cbp_tmicon-phone"></div>
+				                          <div class="cbp_tmlabel">
+				                                <ul class="ev_header">
+				                                  <li>
+				                                    <h2>Kids Robotics</h2>
+				                                  </li>
+				                                  <li class="pull-right">
+				                                    <span class="glyphicon glyphicon-pencil" ></span> <span>Edit</span>
+				                                  </li>
+				                                </ul>
+				                            <div class="ev_container">
+				                              <div class="banner"> 
+				                                <div>
+				                                  <img height="400px" width="400px" src="img/cyberBullying.png"/> 
+				                                </div>
+				                              </div>
+				                              <div class="event">
+				                                <p style="margin-left : 20px; font-size: 13px; text-overflow: ellipsis-word; max-height: 110px; overflow: hidden;">Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent id tempor ipsum. Fusce at massa ac nunc porta fringilla sed eget neque. Quisque quis pretium nulla. Fusce eget bibendum neque, vel volutpat augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+				                                <ul class="ev_footer">
+				                                  <li>
+				                                    <span></span> <span>Kinu</span>
+				                                  </li>
+				                                  <li>
+				                                    <span></span> <span>Today</span>
+				                                  </li>
+				                                  <li>
+				                                    <span class="glyphicon glyphicon-time"></span> <span>12:30pm</span>
+				                                  </li>
+				                                </ul>
+				                              </div>
+				                            </div>
+				                                <ul class="ev_gallery">
+				                                  <li class="ev_gal">
+				                                    <span class="glyphicon glyphicon-picture"></span> <span>Gallery</span>
+				                                  </li>
+				                                  <li>
+				                                    <span></span> <img height="33px" width="40px" src="img/cyberBullying.png"/>  <span></span>
+				                                  </li>
+				                                  <li>
+				                                    <span></span> <img height="33px" width="40px" src="img/cyberBullying.png"/>  <span></span>
+				                                  </li>
+				                                  <li>
+				                                    <span></span> <img height="33px" width="40px" src="img/cyberBullying.png"/>  <span></span>
+				                                  </li>
+				                                  <li>
+				                                    <span></span> <img height="33px" width="40px" src="img/cyberBullying.png"/>  <span></span>
+				                                  </li>
+				                                  <li>
+				                                    <span></span> <img height="33px" width="40px" src="img/cyberBullying.png"/>  <span></span>
+				                                  </li>
+				                                  <li>
+				                                    <span></span> <img height="33px" width="40px" src="img/cyberBullying.png"/>  <span></span>
+				                                  </li>
+				                                </ul>
+				                          </div>
 
-           <section>
+				                        </li>
+				                      </ul>
+				                    </div>
+				                  </div>
+
+				              </div>
+				            </div>
+				          </div>
+				       </section>
+
+				       <section class="subscribe text-center">
+					          <div class="container-fluid">
+					            <div class="row subscribe subscribe_div">
+					              <div class="col-xs-12 pull-left text-div">
+					                    <h1>Are you a parent?</h1>
+					                    <p class="lead"> Help your children gain experience in everyday life by subscribing to this website</p>
+					                    <button>Register as Parent</button>
+					                </div>
+					            </div>
+					          </div>
+					        </section>
+					        <section class="dark-bg text-center section-padding contact-wrap" id="contact">
+					          <a href="#top" class="up-btn"><i class="fa fa-chevron-up"></i></a>
+					          <div class="container">
+					            <div class="row">
+					              <div class="col-md-12">
+					                <h1 class="arrow">Talk to us</h1>
+					              </div>
+					            </div>
+					            <div class="row contact-details">
+					              <div class="col-md-4">
+					                <div class="light-box box-hover">
+					                  <h2><i class="fa fa-map-marker"></i><span>Address</span></h2>
+					                  <p>Level 6, 23 Pitt St, Sydney</p>
+					                </div>
+					              </div>
+					              <div class="col-md-4">
+					                <div class="light-box box-hover">
+					                  <h2><i class="fa fa-mobile"></i><span>Phone</span></h2>
+					                  <p>+61 9 211 3747</p>
+					                </div>
+					              </div>
+					              <div class="col-md-4">
+					                <div class="light-box box-hover">
+					                  <h2><i class="fa fa-paper-plane"></i><span>Email</span></h2>
+					                  <p><a href="#">hey@halcyondays.com</a></p>
+					                </div>
+					              </div>
+					            </div>
+					            <div class="row">
+					              <div class="col-md-12">
+					                <ul class="social-buttons">
+					                  <li><a href="#" class="social-btn"><i class="fa fa-dribbble"></i></a></li>
+					                  <li><a href="#" class="social-btn"><i class="fa fa-twitter"></i></a></li>
+					                  <li><a href="#" class="social-btn"><i class="fa fa-envelope"></i></a></li>
+					                </ul>
+					              </div>
+					            </div>
+					          </div>
+					        </section>
+					        <footer>
+					          <div class="container">
+					            <div class="row">
+					              <div class="col-md-6 credit">
+					                <p>Designed &amp; Developed by <a href="http://kinu.co.tz">Kinu Iternship Program </a> exclusively for <a href="#"><em>Kinu Kids</em></a></p>
+					              </div>
+					            </div>
+					          </div>
+					        </footer>
+		        </div>
+				
+			</div>
+
+			<!-- the bottom line -->
+			<div class="row col-md-10" id="footer">
+				<section>
 					<div class="tabs tabs-style-iconfall">
 						<nav>
 							<ul>
 								<li><a href="#section-iconfall-1" class="icon icon-home"><span>Kinu kids</span></a></li>
-								<li><a href="#forms.html" class="icon icon-gift"><span>Parents</span></a></li>
+								<li><a href="#section-iconfall-2" class="icon icon-gift"><span>Parents</span></a></li>
 								<li><a href="#section-iconfall-3" class="icon icon-upload"><span>Up</span></a></li>
 								<li><a href="#section-iconfall-4" class="icon icon-coffee"><span>Events</span></a></li>
 								<li><a href="#section-iconfall-5" class="icon icon-config"><span>About us</span></a></li>
-								</ul>
+							</ul>
 						</nav>
 						<div class="content-wrap">
-							<section id="section-iconfall-1"><p>1</p></section>
-							<section id="section-iconfall-2"><p>2</p></section>
-							<section id="section-iconfall-3"><p>3</p></section>
-							<section id="section-iconfall-4"><p>4</p></section>
-							<section id="section-iconfall-5"><p>5</p></section>
+							<section id="section-iconfall-1"><p></p></section>
+							<section id="section-iconfall-2"><p></p></section>
+							<section id="section-iconfall-3"><p></p></section>
+							<section id="section-iconfall-4"><p></p></section>
+							<section id="section-iconfall-5"><p></p></section>
 						</div><!-- /content -->
 					</div><!-- /tabs -->
 				</section>
 			</div>
+
 		</div>
- 	<script type="text/javascript" src="behaviour/bblgame.js"></script>
- 	<script type="text/javascript" src="behaviour/jQuery/jquery.js"></script> 
- 	<script type="text/javascript" src="style/bs/js/bootstrap.js"></script> 
- 	<script src="behaviour/cbpFWTabs.js"></script>
+
+
+		<script type="text/javascript" src="behaviour/bblgame.js"></script>
+		<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="behaviour/cbpFWTabs.js"></script>
 		<script>
 			(function() {
 
@@ -88,7 +254,9 @@
 				});
 
 			})();
+		</script>
 
-		</script> 
-   </body>
+
+		
+	</body>
 </html>
