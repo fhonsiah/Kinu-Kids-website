@@ -39,8 +39,7 @@
     	padding-top: 0px;
     }
 
-    .dropdown-menu 
-{
+    .dropdown-menu {
     background-color: #34495e;    
     box-shadow: none;
     -webkit-box-shadow: none;
@@ -49,14 +48,48 @@
     left: 50%;
     margin-bottom:10px;
     }
-.dropdown-menu .divider 
-{
+.dropdown-menu .divider {
     background:none;    
     }
-.dropdown-menu>li>a
-{
+.dropdown-menu>li>a{
     color:#f5f5f5;
     }
+
+    .no-pad {
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+    }
+.user-image {
+  max-height:200px;
+  overflow:hidden;
+    }
+  .user-details {
+    background: #eee;
+    min-height: 333px;
+    }
+  .user-pad {
+              padding: 20px 25px;
+          }
+
+/* -- media query for user profile image -- */
+@media (max-width: 767px) {
+    .user-image {
+        max-height: 400px;
+    }
+  }
+
+/* -- The btn stylings for the btn icons -- */
+.btn-label {position: relative;left: -12px;display: inline-block;padding: 6px 12px;background: rgba(0,0,0,0.15);border-radius: 3px 0 0 3px;}
+.btn-labeled {padding-top: 0;padding-bottom: 0;}
+
+.white {
+    color: #fff!important;
+}
+
+.coralbg {
+    background-color: #FA396F;
+} 
 
 	</style>
 <div class="container">
@@ -122,37 +155,34 @@
 		<form data-toggle="validator" role="form" id="registrationForm" method="post" action="...">
 			<div class="form-group">
 
-			<div class="col-lg-6">
-				
-				<div class="row">
-				
-  				<div class="col-lg-6">
-   				 <a href="#" class="thumbnail">
-      			<img src="images/user146.png" alt="..." class="img-rounded">
-    			</a>
-  				</div>
-  				<div class="col-lg-6 col-md-3">
-  						<h2><small>Please update your photo</small></h2>
-  					</div><br>
-  				  <button class="btn btn-info "><span class="glyphicon glyphicon-user"></span> Choose DP</button>
-  				</div>
+      <div class="col-md-6 user-details">
+        <div class="col-lg-6 coralbg white">
 
-  				<div class="row">
-  				
-  					<div class="col-lg-6 col-md-3 ">
-  						<a href="#" class="thumbnail">
-  							<img src="images/user146.png" alt="..." class="img-rounded">
-  						</a>
-  					</div>
-  						<div class="col-lg-6">
-  						<h2><small>Please update your kid photo</small></h2>
-  					</div><br>
-  					
-  					  <button class="btn btn-info "><span class="glyphicon glyphicon-user"></span> Choose DP </button>
-  				</div>
-  				<!-- end row for DP -->
-			</div>
-			<!-- end of Display pictures Division -->
+          <div class="col-lg-6 no-pad">
+                 <div class="user-image">
+                      <img src="images/user146.png" alt="..." class="img-responsive thumbnail ">
+                 </div>
+          
+          </div>
+
+            <div class="col-md-6 no-pad">
+                    <div class="user-pad">
+                        <h3>Welcome back, Parent</h3>
+                        <h4 class="white"><i class=""></i>We are Happy To have you </h4>
+                        <h4 class="white"><i class=" "></i> Please update Your Picture</h4>
+                        <button type="button" class="btn btn-labeled btn-info" href="#">
+                            <span class="btn-label"><i class=" "></i></span>Upload</button>
+                    </div>
+                </div>
+
+
+
+      </div>
+      <!-- end of Display pictures Division -->
+
+      </div>
+
+			
 
 				
 			<div class="form-group col-lg-6">

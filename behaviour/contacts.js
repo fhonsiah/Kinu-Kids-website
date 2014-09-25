@@ -10,7 +10,7 @@
 
             $(this)
                 .toggleClass('btn-success btn-add btn-danger btn-remove')
-                .html('–');
+                .html('-');
 
             $formGroupClone.find('input').val('');
             $formGroupClone.find('.concept').text('Phone');
