@@ -1,12 +1,13 @@
 <html>
 
 <head>
-	<title>bubble game
+	<title>KinuKids
 	</title>
 	<link rel="stylesheet" type="text/css" href="style/style.css"/>
-	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="style/bs/css/bootstrap.css"/>
 	<link rel="stylesheet" type="text/css" href="style/tabs.css" />
 	<link rel="stylesheet" type="text/css" href="style/tabstyles.css" />
+	<link rel="stylesheet" type="text/css" href="style/font-awesome.min.css" />
 </head>
 
 	<body>
@@ -16,17 +17,15 @@
 			<div class="row" id="qs">
 				<!-- <div id="qnDiv" class="qn-div col-md-3"></div>
 				<div class="score col-md-3 pull-right" id="score"></div> -->
-				<section>
+			<section>
 				<div style="border: none" class="tabs tabs-style-circlefill">
 					<nav style="border: none">
-						<ul>
-							<li id="qnDiv"><a href="#section-circlefill-1" class="icon icon-plug"><span style="z-index: 1000"> </span></a></li>
-							<!-- <li><a href="#section-circlefill-2" class="icon icon-gift"><span>Gifts</span></a></li>
-							<li><a href="#section-circlefill-3" class="icon icon-box"><span>Boxes</span></a></li>
-							<li><a href="#section-circlefill-4" class="icon icon-date"><span>Prints</span></a></li> -->
-							<li><a href="#section-circlefill-5" class="icon icon-plane"><span></span></a></li>
+						<ul class="qna-ul">
+							<li><a href="#" class="icon-top1 fa fa-question-circle pull-left"><span style="z-index: 1000" id="qnDiv"> </span></a></li>
+							<li><a href="#" class="icon-top2 icon-plane pull-right"><span> Scores</span></a></li>
 						</ul>
 					</nav>
+
 					<div style="border: none" class="content-wrap">
 						<section id="section-circlefill-1"></section>
 						<section id="section-circlefill-2"></section>
@@ -34,35 +33,25 @@
 						<section id="section-circlefill-4"></section>
 						<section id="section-circlefill-5"></section>
 					</div><!-- /content -->
+
 				</div><!-- /tabs -->
 			</section>
 			</div>
 			<!--the main  body-->
 			<div class="row" id="gameCon">
+					<!-- game part -->
+					<section class="hero start-game" id="hero">
+			            <div class="container">
+			              <div class="row">
+			                <div class="col-md-8 col-md-offset-2 game-margin-top text-center inner">
+			                  <h1 class="animated fadeInDown">Bubble <span>game</span></h1>
+			                  <span class="animated fa fa-play-circle-o play-game fadeInUp delay-05s"></span>
+			                </div>
+			              </div>
+			            </div>
+			        </section>
 
-				<!-- game part -->
-				<section class="hero" id="hero">
-		            <div class="container">
-		              <div class="row">
-		                <div class="col-md-12 text-right navicon">
-		                  <a id="nav-toggle" class="nav_slide_button" href="#"><span></span></a>
-		                </div>
-		              </div>
-		              <div class="row">
-		                <div class="col-md-8 col-md-offset-2 text-center inner">
-		                  <h1 class="animated fadeInDown">Bubble <span>game</span></h1>
-		                  <p class="animated fadeInUp delay-05s">Start playing</p>
-		                </div>
-		              </div>
-		              <div class="row">
-		                <div class="col-md-6 col-md-offset-3 text-center">
-		                  <!-- <a href="http://tympanus.net/codrops/?p=19439" class="learn-more-btn">Back to the article</a> -->
-		                </div>
-		              </div>
-		            </div>
-		        </section>
-
-		        <div class="kinu-events">
+				<div class="push-down">
 		        	<section class="swag text-center">
 				          <div class="container">
 				            <div class="row">
@@ -175,19 +164,19 @@
 					              <div class="col-md-4">
 					                <div class="light-box box-hover">
 					                  <h2><i class="fa fa-map-marker"></i><span>Address</span></h2>
-					                  <p>Level 6, 23 Pitt St, Sydney</p>
+					                  <p>Conservation House, 1st Floor</p>
 					                </div>
 					              </div>
 					              <div class="col-md-4">
 					                <div class="light-box box-hover">
 					                  <h2><i class="fa fa-mobile"></i><span>Phone</span></h2>
-					                  <p>+61 9 211 3747</p>
+					                  <p>+255 685 154 542</p>
 					                </div>
 					              </div>
 					              <div class="col-md-4">
 					                <div class="light-box box-hover">
 					                  <h2><i class="fa fa-paper-plane"></i><span>Email</span></h2>
-					                  <p><a href="#">hey@halcyondays.com</a></p>
+					                  <p><a href="#">juliustheodory@gmail.com</a></p>
 					                </div>
 					              </div>
 					            </div>
@@ -211,7 +200,8 @@
 					            </div>
 					          </div>
 					        </footer>
-		        </div>
+					</div>
+					
 				
 			</div>
 
@@ -220,12 +210,12 @@
 				<section>
 					<div class="tabs tabs-style-iconfall">
 						<nav>
-							<ul>
-								<li><a href="#section-iconfall-1" class="icon icon-home"><span>Kinu kids</span></a></li>
-								<li><a href="#section-iconfall-2" class="icon icon-gift"><span>Parents</span></a></li>
-								<li><a href="#section-iconfall-3" class="icon icon-upload"><span>Up</span></a></li>
-								<li><a href="#section-iconfall-4" class="icon icon-coffee"><span>Events</span></a></li>
-								<li><a href="#section-iconfall-5" class="icon icon-config"><span>About us</span></a></li>
+							<ul class="menu-icons">
+								<li><a href="#section-iconfall-1" class="icon fa fa-lightbulb-o"><span>Kinu kids</span></a></li>
+								<li><a href="#section-iconfall-2" class="icon glyphicon glyphicon-user"><span>Parents</span></a></li>
+								<li><a href="#section-iconfall-3" class="icon fa fa-arrow-circle-down"><span>Up</span></a></li>
+								<li><a href="#section-iconfall-4" class="icon glyphicon glyphicon-calendar"><span>Events</span></a></li>
+								<li><a href="#section-iconfall-5" class="icon glyphicon glyphicon-info-sign"><span>About us</span></a></li>
 							</ul>
 						</nav>
 						<div class="content-wrap">
@@ -243,8 +233,8 @@
 
 
 		<script type="text/javascript" src="behaviour/bblgame.js"></script>
-		<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
-		<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="behaviour/jQuery/jQuery.js"></script>
+		<script type="text/javascript" src="style/bs/js/bootstrap.js"></script>
 		<script src="behaviour/cbpFWTabs.js"></script>
 		<script>
 			(function() {
