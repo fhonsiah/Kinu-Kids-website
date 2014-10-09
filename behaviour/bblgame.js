@@ -40,10 +40,13 @@
                 number.innerHTML = numb;
 
                 bblDiv.setAttribute('id','bblDiv');
+<<<<<<< HEAD
                 bblDiv.setAttribute('class','bblAnimate ascDesc');
                 // adding animation claas  //
 
 
+=======
+>>>>>>> 0d6fb55ef9b27bd002721872d5113c4ad74f06c5
                 bblDiv.setAttribute('onclick','bblClicked(this)');
 
                 // console.log(bblDiv);
@@ -130,7 +133,11 @@
 
             },
 
+<<<<<<< HEAD
     setPos         : function(){
+=======
+             setPos         : function(){
+>>>>>>> 0d6fb55ef9b27bd002721872d5113c4ad74f06c5
 
                              var bblDiv = document.getElementById('bblDiv');
 
@@ -144,7 +151,11 @@
 
              },
 
+<<<<<<< HEAD
     setPos2         : function(){
+=======
+             setPos2         : function(){
+>>>>>>> 0d6fb55ef9b27bd002721872d5113c4ad74f06c5
 
                              var bblDiv = document.getElementById('bblDiv');
 
@@ -159,7 +170,11 @@
              },
 
 
+<<<<<<< HEAD
     bounce                : function(){
+=======
+             bounce                : function(){
+>>>>>>> 0d6fb55ef9b27bd002721872d5113c4ad74f06c5
 
                      var bblDiv = document.getElementById('bblDiv');
 
@@ -173,11 +188,16 @@
 
              }, // end of bounce method
 
+<<<<<<< HEAD
     questionGen : function(){
+=======
+        questionGen : function(){
+>>>>>>> 0d6fb55ef9b27bd002721872d5113c4ad74f06c5
        var question =[];
        var answer = [];
 
        question = ["2+5","2+8","2+2"];
+<<<<<<< HEAD
        answer = ["7","10","4","7","10","4"];
        var qnDiv= document.getElementById('qnDiv');
        qnDiv.innerHTML = question[0];
@@ -199,6 +219,24 @@
     },
 
     calcPos2 : function(){
+=======
+       answer = ["7","10","4"];
+       var qnDiv= document.getElementById('qnDiv');
+       qnDiv.innerHTML = question[0];
+
+        // var ansPar = document.createElement('p');
+        // ansPar.setAttribute('id','ansPar');
+        // bblDiv.appendChild(ansPar);
+        // ansPar.innerHTML = answer[2];
+
+        //creating the bubble
+        bblGame.createBubble(answer[0]);
+        // animating the bubble
+        bblGame.calcPos(9,0,200);
+    },
+
+       calcPos2 : function(){
+>>>>>>> 0d6fb55ef9b27bd002721872d5113c4ad74f06c5
              var time = 0;
              pos2Int();
              function pos2Int(){
@@ -236,15 +274,25 @@
 
 // bbl cliced function //
     function bblClicked(obj){
+<<<<<<< HEAD
         alert("clicked me");
         // var bblDiv = obj;
         // bblDiv.className = "bblBurst";
     }
     
+=======
+        //alert("click me");
+        var bblDiv = obj;
+        bblDiv.className = "bblBurst";
+    }
+     
+    bblGame.questionGen();
+>>>>>>> 0d6fb55ef9b27bd002721872d5113c4ad74f06c5
 
     //-----------  STYLE  --------//
 
     //-----------  STYLE  --------//
+<<<<<<< HEAD
 
 
 
@@ -268,3 +316,5 @@ addClass = function( elem, c ) {
 removeClass = function( elem, c ) {
     elem.className = elem.className.replace( classReg( c ), ' ' );
   };
+=======
+>>>>>>> 0d6fb55ef9b27bd002721872d5113c4ad74f06c5

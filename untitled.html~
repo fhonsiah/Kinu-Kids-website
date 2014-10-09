@@ -1,0 +1,200 @@
+	 <link rel="stylesheet" type="text/css" href="style/style.css"/>
+  <link rel="stylesheet" type="text/css" href="style/bs/css/bootstrap.css"/>
+  <link rel="stylesheet" type="text/css" href="style/tabs.css" />
+  <link rel="stylesheet" type="text/css" href="style/tabstyles.css" />
+  <link rel="stylesheet" type="text/css" href="style/font-awesome.min.css" />
+
+  
+
+
+  <div class="row coralbg white">
+                <div class="col-md-6 no-pad">
+                    <div class="user-pad">
+                        <h3>Warm Welcome regards for visiting KinuKids</h3>
+                        <h4 class="white"><i class=""></i> Lets Begin, with</h4>
+                        <h4 class="white"><i class=""></i> Your Name <div class="glyphicon glyphicon-chevron-down"></div></h4>
+                      
+                    </div>
+                </div>
+               <!--  <div class="col-md-6 no-pad">
+                    <div class="user-image">
+                        <img src="img/mama&kage.jpg" class="img-responsive thumbnail">
+                    </div>
+                </div> -->
+            </div>
+
+
+  <div class="tabs tabs-style-iconbox col-lg-6">
+					<nav>
+						<ul>
+							<li><a href="#section-iconbox-1" class="glyphicon glyphicon-hand-down"><span></span></a></li>
+							<li><a href="#section-iconbox-2" class="glyphicon glyphicon-phone"><span></span></a></li>
+							<li><a href="#section-iconbox-3" class="glyphicon glyphicon-heart"><span></span></a></li>
+							<li><a href="#section-iconbox-4" class="glyphicon glyphicon-cloud-upload"><span></span></a></li>
+							
+						</ul>
+					</nav>
+					<div class="content-wrap">
+						<section id="section-iconbox-1 col-lg-6">
+							   <h3>
+                   Parents Details
+                </h3>
+             <div class="form-group col-lg-6">
+                <form role="form" class="form-group" >
+                    <!-- <label class="pull-left">Title:</label> -->
+                    <div class="form-group multiple-form-group input-group pull-left">
+                        <div class="input-group-btn form-group input-group-select pull-left">
+                            <button type="button" class="btn btn-default dropdown-toggle " data-toggle="dropdown">
+                                <span class="concept ">Your..</span> <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#mr">Mr</a></li>
+                                <li><a href="#mis">Mis</a></li>
+                                <li><a href="#sir">Sir</a></li>
+                                <li><a href="#madam">Madam</a></li>
+                                <li><a href="#dr">Dr</a></li>
+                                <li><a href="#ms">Ms</a></li>
+                                <li><a href="#hon">Hon</a></li>
+                                <li><a href="rev">Rev</a></li>
+                            </ul>
+                            
+                        </div>
+                       
+                    </div>
+                <div class="col-lg-12 form-group">
+                <label for="inputName" class="contol-label">Parent Name</label>
+                    <input type="text" class="form-control" id="inputName" name="username" placeholder="FullName" required>
+                </div>
+
+                 <div class="col-lg-12 form-group">
+                <label for="inputName" class="contol-label">Address</label>
+                    <input type="text" class="form-control" id="inputName" name="username" placeholder="Physical address" required>
+                </div>
+
+                 <div class="col-lg-12 form-group">
+                <label for="inputName" class="contol-label">City</label>
+                    <input type="text" class="form-control" id="inputName" name="username" placeholder="Current city" required>
+                </div>
+
+                   <div class="col-lg-12 form-group">
+                         <label for="occupation" class="control-label">Occupations</label>
+                         <input type="text" class="form-control" id="" placeholder="Field of expert">
+                    </div>
+
+
+             </form>
+        
+                  </div>
+
+             
+
+            <!-- end of parents details -->
+						</section>
+
+						<section id="section-iconbox-2 col-lg-6">
+                <h3>
+                    Lets Get intouch
+                </h3>
+    <div class="row form-group">
+        
+        <div class="col-lg-6">
+            <div class="contacts">
+                <label>Contacts:</label><br>
+                <label>Please enter your email and your phone number</label>
+                <label><i>Click + button and choose on the left side email or phone,<br>
+                you can add more than one email and phone number</i></label>
+
+                    <div class="form-group multiple-form-group input-group">
+                        <div class="input-group-btn input-group-select">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                <span class="concept">Phone</span> <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#phone">Phone</a></li>
+                                <li><a href="#email" >Email</a></li>
+                                
+                            </ul>
+                            <input type="hidden" class="input-group-select-val" name="contacts['type'][]" value="phone">
+                        </div>
+                        <input type="text" name="contacts['value'][]" class="form-control">
+                        <span class="input-group-btn">
+                            <button type="button" class="btn btn-success btn-add">+</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+            </section>
+						<section id="section-iconbox-3 col-lg-6">
+                <h2>
+                    About your kid
+                </h2>
+
+
+
+                      <div class="col-lg-6 form-group">
+                         <label for="occupation" class="control-label">Kid Name</label>
+                         <input type="text" class="form-control" id="" placeholder="What is your kidname?">
+
+                          <label for="DOB" class="control-label">Date of birth</label>
+                          <input type="text" class="form-control" name="birthday" placeholder="YYYY/MM/DD" />
+                    </div>
+              
+                     
+                    <div class="col-lg-6 form-group">
+                         <label for="gurdain" class="control-label">The following gurdains will pick-up my kid
+                         on my behalf
+                         </label><br>
+                         <label for="gurdain" class="control-label">
+                             I here by Authorize
+                         </label><br>
+                         <label for="gurdain" class="control-label">Gurdain Name</label>
+                         <input type="text" class="form-group form-control" id="" placeholder="Mr or Miss">
+                         <label for="gurdain" class="control-label">Phone Number</label>
+                         <input type="text" class="form-group form-control" id="" placeholder="(+255)-713 007329">
+
+                         <label for="gurdain" class="control-label">Gurdain Name</label>
+                         <input type="text" class="form-group form-control" id="" placeholder="Mr or Miss">
+                         <label for="gurdain" class="control-label">Phone Number</label>
+                         <input type="text" class="form-group form-control" id="" placeholder="(+255)-713 007329">
+                         
+                    </div>
+              
+            </section>
+						<section id="section-iconbox-4 col-lg-6">                
+            <div class="col-lg-12 btn-group btn-justified">
+                <label class="control-label">Thank you parent
+                </label>  
+                <div class="col-lg-12 ">
+                  <button class="btn btn-success btn-lg" type="submit">SignUp</button>
+                </div>              
+                
+            </div>
+         
+            </section>
+				
+					</div><!-- /content -->
+				</div><!-- /tabs -->
+
+          <script src="http://code.jquery.com/jquery-2.1.1.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+        <script type="text/javascript" src="behaviour/bootstrapValidator.js"></script>
+    <!-- calling plugin -->
+    <script type="text/javascript" src="behaviour/validate.js"></script>
+
+    <!-- contacts.js -->
+    <script type="text/javascript" src="behaviour/contacts.js"></script>
+
+    <script src="behaviour/cbpFWTabs.js"></script>
+    <script>
+      (function() {
+
+        [].slice.call( document.querySelectorAll( '.tabs' ) ).forEach( function( el ) {
+          new CBPFWTabs( el );
+        });
+
+      })();
+    </script>
